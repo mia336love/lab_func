@@ -15,8 +15,8 @@ const blackList = [
 let valid = [];
 
 function filterValid(allEmails, blackList) {
-  for (let i in blackList) {
-    if (allEmails.includes(blackList[i])) {
+  for (let i in allEmails) {
+    if (blackList.includes(allEmails[i])) {
     }
   }
 }
