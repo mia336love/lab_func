@@ -16,7 +16,11 @@ let valid = [];
 
 function filterValid(allEmails, blackList) {
   for (let i in allEmails) {
-    if (blackList.includes(allEmails[i])) {
+    if (!blackList.includes(allEmails[i])) {
+      valid.push(allEmails[i]);
     }
   }
+  return valid;
 }
+let result = filterValid(allEmails, blackList);
+console.log(result);
