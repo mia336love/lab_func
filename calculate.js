@@ -22,6 +22,7 @@ function calculate(cartAmount, numOfItems, promoCode) {
   if (promoCode === "СКИДКА15" && discountCartAmount >= 20000) {
     discountCartAmount = discountCartAmount - (discountCartAmount / 100) * 15;
   }
+  console.log("Стоимость: ", discountCartAmount);
 }
 
 /*
