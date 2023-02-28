@@ -11,3 +11,12 @@ const blackList = [
   "bigBoo@gmail.com",
   "ensemlestar@gmail.com",
 ];
+
+let valid = [];
+
+function filterValid(allEmails, blackList) {
+  for (let i in blackList) {
+    if (blackList.includes(allEmails[i])) {
+    }
+  }
+}
